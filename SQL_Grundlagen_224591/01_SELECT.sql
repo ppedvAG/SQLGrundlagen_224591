@@ -48,7 +48,8 @@ SELECT CompanyName as Firma FROM Customers
 SELECT * FROM Customers as cus
 
 --Mit DISTINCT werden Ergebnisse "gefiltert", nur einzigartige Ergebniszeilen
-SELECT DISTINCT Country FROM Customers
+SELECT DISTINCT 
+Country FROM Customers
 
 SELECT DISTINCT Country, City FROM Customers
 

@@ -65,3 +65,5 @@ SELECT CAST(OrderDate as date) FROM Orders
 --CONVERET optionales Argument "Style": Formatiert einen String um, bspw. Datum in DE dd.mm.yyyy
 SELECT CONVERT(varchar(20), OrderDate, 104) FROM Orders
 
+
+

@@ -49,4 +49,5 @@ FROM customers
 SELECT orderID as Bestellnummer, ProductId, 
 (Quantity*UnitPrice) * (1 - Discount) as SummePosition 
 FROM [Order Details]
+ORDER BY SummePosition DESC
 

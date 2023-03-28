@@ -11,10 +11,15 @@ WHERE Freight > 500
 SELECT Freight FROM Orders
 WHERE Freight > 100 AND Freight < 500
 
+SELECT * FROM Customers
+WHERE Country != 'France'
+
 --BETWEEN ist mit Randwerten (>= und <=)
 SELECT Freight FROM Orders
 WHERE Freight BETWEEN 100 AND 500
 
+SELECT * FROM Orders
+WHERE OrderDate BETWEEN '19970101' AND '19970201'
 
 
 --1. Alle Kunden aus Berlin
