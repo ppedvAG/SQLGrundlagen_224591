@@ -14,9 +14,9 @@ SELECT DATEDIFF(dd, '19930224', getdate())
 --Nur Teile aus einem Datum ziehen
 SELECT DAY(OrderDate), MONTH(OrderDate), YEAR(OrderDate) FROM Orders
 
-SELECT DATEPART(QUARTER, OrderDate) FROM Orders
+SELECT DATEPART(QUARTER, OrderDate) FROM Orders -- DATEPART kann "alle" Zeitintervalle; DAY(), MONTH(), YEAR() sind nur "Abkürzungen" dafür
 
-SELECT DATENAME(MONTH, '19930224'), DATENAME(WEEKDAY, '19930224')
+SELECT DATENAME(MONTH, '19930224'), DATENAME(WEEKDAY, '19930224') -- Name/Wort des Wochentags/Monats
 
 --1. Differenz in Tagen zwischen Shipped und RequiredDate (Orders),
 --Hatten wir Lieferverzögerungen?

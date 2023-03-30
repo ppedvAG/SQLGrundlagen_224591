@@ -1,5 +1,6 @@
 --JOIN = Zusammenführen von Tabellen
 --Join Struktur/Syntax gehört zum FROM, ist quasi eine Erweiterung
+--Unterschied INNER/OUTER usw. siehe Bild
 
 --INNER JOINS:
 
@@ -73,7 +74,7 @@ FROM Customers as c LEFT JOIN Orders as o ON c.CustomerID = o.CustomerID
 WHERE OrderID IS NULL
 
 SELECT * 
-FROM Orders as o RIGHT JOIN  Customers as c ON c.CustomerID = o.CustomerID
+FROM Orders as o RIGHT JOIN Customers as c ON c.CustomerID = o.CustomerID
 WHERE OrderID IS NULL
 
 SELECT *
